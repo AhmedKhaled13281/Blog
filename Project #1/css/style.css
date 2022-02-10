@@ -1,0 +1,497 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Tahoma , Arial;
+    box-sizing: border-box;
+}
+.container{
+    width:1200px;
+    margin: auto;
+}
+.clear{
+    clear: both;
+    margin: 20px;
+}
+/* NavBar */
+.backGround{
+    background-image: url('../images/home/headphones-wallpaper-thumb.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 720px;
+}
+.navBar{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    
+}
+.navBar .logo{
+    float: left;
+    font-size: 40px;
+    font-weight: 500;
+    padding-top: 20px;
+}
+.navBar .nav{
+    float: right;
+    margin-right: 100px;
+    overflow: hidden;
+}
+.navBar .nav .nav-list ,.pages-list ,.show-list , .gallery-list{
+    list-style-type: none;
+}  
+.pages-list ,.show-list , .gallery-list{
+    display: none;
+}
+.navBar .nav .nav-list .nav-item{
+    display: inline-block;
+    padding: 40px 30px 0 0;
+    font-size: 20px;
+    
+}
+.pages-list .pages-item,.show-list .show-item, .gallery-list .gallery-item{
+    position: relative;
+    font-size: 20px;
+    margin-top: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+.navBar .nav .nav-list .nav-item:nth-child(3):hover{
+    padding-bottom: 30px;
+}
+.navBar .nav .nav-list .nav-item:nth-child(2):hover{
+    padding-bottom: 30px;
+}
+.navBar .nav .nav-list .gallery-item:nth-child(2):hover{
+    padding-right: -5px;
+}
+.show-list{
+    width:100%;
+    float: right;
+}
+.navBar .nav .nav-list .nav-item:nth-child(3):hover .gallery-list{
+    background-color: #bfbfbf;
+    display: block;
+    position: absolute;
+    top:50;
+    left:50;
+    margin-top: 20px;
+    padding: 0px 30px;
+    
+}
+.navBar .nav .nav-list .nav-item:nth-child(2):hover .pages-list{
+    background-color: #bfbfbf;
+    display: block;
+    position: absolute;
+    top:50;
+    left:50;
+    margin-top: 20px;
+    padding: 0px 30px;
+    
+}
+.navBar .nav .nav-list .gallery-item:nth-child(2):hover .show-list{
+    background-color: #bfbfbf;
+    display: block;
+    position: absolute;
+    top:-150%;
+    right:0;
+    left:140%;
+    margin-top: 20px;
+    padding: 0px 30px;
+}
+.container .in-nav , .container .lb-nav{
+    position: absolute;
+    top:5%;
+    right:10%;
+}
+.navBar label{
+    display: block;
+    width:20px;
+    height: 20px;
+    background:url('../Images/Navbar/open.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+.navBar input[type="checkbox"]{
+    display: none;
+}
+
+.navBar input:checked ~ .nav .nav-list{
+    display: block;  
+}
+.navBar input:checked ~ label{
+    background-image: url('../images/Navbar/close.png');
+    background-size: cover;
+}
+/* End NavBar */
+/* Home Section */
+.home{
+    text-align: center;
+    padding-top: 200px;
+}
+.home-title{
+    padding-bottom: 20px;
+    font-size: 60px;
+}
+.home-des{
+    padding-bottom: 20px;
+    font-weight: 300;
+}
+.email{
+    padding: 7px;
+    width:30%;
+}
+.home .icon2{
+    width: 34px;
+    height: 34px;
+    background-color: #DBE5E7;
+}
+/* Home Section */
+/* Work */
+.work{
+    padding: 30px 0;
+    text-align: center;
+    overflow: hidden;
+}
+.work-information{
+    padding: 40px 0 ;
+}
+.work-title{
+    padding-bottom: 20px;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.data{
+    float: left;
+    width:22%;
+    padding: 10px;
+}
+.data .icon3{
+    font-size: 45px;
+    padding-bottom: 35px;
+    color: #829DA2;
+}
+.data .data-title{
+    font-size: 25px;
+    font-weight: 100;
+    padding-bottom: 35px;
+    text-transform: capitalize;
+}
+.data .data-des{
+    line-height: 1.5;
+    padding-bottom: 35px;
+}
+.data-button{
+    width:145px;
+    height: 43px;
+    background-color: #DBE5E7;
+    outline: none;
+    border: 1px solid;
+}
+.data-button:hover{
+    background-color: white;
+}
+/* End Work */
+/*pictures*/
+.pictures{
+    background-color: #F4F4F4;
+    text-align: center;
+    overflow: hidden;
+}
+.pictures-part{
+    padding: 35px 10px 0 10px;
+    float: left;
+    width:30%;
+}
+img{
+    width: 100%;
+}
+.data-button2{
+    width:145px;
+    height: 43px;
+    background-color: #DBE5E7;
+    outline: none;
+    border: 1px solid;
+    margin: 50px 0;
+}
+.data-button2:hover{
+    background-color: white;
+}
+/* ENd pictures */
+/* Story */
+.Story{
+    padding: 30px 0;
+    overflow: hidden;
+    text-align: center;
+}
+.story-part{
+    float: left;
+    width: 30.3333%;
+    padding-right: 25px;
+    padding-left: 0;
+    padding-top: 50px;
+}
+time{
+    font-size: 14px;
+    display: block;
+    padding: 15px 0;
+}
+.story-title{
+    font-size: 20px;
+    font-weight: 100;
+    padding: 30px 0 10px 0px;
+    text-transform: capitalize;
+}
+.user{
+    font-size: 12px;
+    padding-bottom: 30px;
+}
+.user  span{
+    padding-left: 5px;
+    color:#64a4b1
+}
+.user .icon4{
+    padding-left: 5px;
+}
+.story-des{
+    line-height: 1.5;
+    padding-bottom: 10px;
+    line-break: auto;
+}
+.data-button3{
+    width:145px;
+    height: 43px;
+    background-color: #DBE5E7;
+    outline: none;
+    border: 1px solid;
+    margin: 40px 0;
+}
+.data-button3:hover{
+    background-color: white;
+}
+/* End Story */
+/* Author */
+.authors{
+    padding-top: 30px;
+    background-color: #171717;
+    height: 423px;
+    text-align: center;
+    color: white;
+}
+.author-part{
+    float: left;
+    width:43%;
+    padding-right: 25px;
+    padding-top: 50px;
+}
+.avatar{
+    border-radius: 50%;
+    width: 18%;
+    float: left;
+    padding-right: 5px;
+}
+.author-name{
+    padding-top: 50px;
+}
+.author-des{
+    line-height: 1.5;
+}
+/* End Author */
+/* Footer */
+.footer{
+    background-color: #323639;
+    overflow: hidden;
+}
+.footer-part{
+    float: left;
+    width: 30.3333%;
+    padding-right: 25px;
+    padding-left: 0;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    color: white;
+}
+.part-title{
+    font-size: 18px;
+    padding-bottom: 28px;
+}
+.part1-des{
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+.icons{
+    font-size: 25px;
+    text-align: center;
+}
+.icon5{
+    margin: auto;
+    text-align: center;
+    float: left;
+    background-color: white;
+    width: 38px;
+    height: 38px;
+    margin-left: 2px;
+    color: black;
+}
+.form{
+    padding-top: 40px;
+}
+.form .part2{
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+.part2-button{
+    width: 97px;
+    height: 41px;
+    background-color: #DBE5E7;
+}
+.photos > img{
+    width:30%;
+    float: left;
+    padding-right: 12px;
+    padding-top: 12px;
+}
+.contact{
+    width: 25%;
+    float: left;
+    padding-bottom: 30px;
+    color:white;
+}
+.contacts{
+    padding: 30px 0;
+}
+/* End Footer */
+/* Media for NavBar and Home Section*/
+@media (min-width : 1113px){
+    .navBar label{
+        display: none;
+    }
+}
+@media (max-width : 1112px){
+    .navBar .logo{
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding-top: 35px;
+    }
+    .navBar nav ul{
+        display: none;
+        width: 100%;
+        float: none;
+        margin-top: 10px;
+       
+    }
+    .nav-item {
+        display: block;
+        text-align: center;
+    }
+
+    .navBar .nav .nav-list .nav-item:nth-child(3):hover .gallery-list{
+        width: 15%;
+    }
+    .navBar .nav .nav-list .nav-item:nth-child(2):hover .pages-list{
+        width: 20%;
+    }
+    .navBar .nav .nav-list .nav-item:nth-child(3):hover .show-list{
+        width: 60%;
+    }
+    .container{
+        width:85%;
+        margin: auto;
+    }
+
+}
+@media (max-width : 700px){
+    .nav-list{
+        text-align: center;
+        margin-left: 70px;
+        
+    }
+    .nav-item {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-left: 0px;
+        padding-right: 10px;
+    }
+    .navBar nav ul{
+        text-align: center;
+        width: 80%;
+        padding-top: 5px ;     
+    }
+    .navBar nav ul li{
+        text-align: center;      
+        padding-top: 0;
+    }
+}
+/* media for WORK */
+@media (max-width : 875px){
+    .data{
+        float: left;
+        width:40%;
+        text-align: center;
+        margin: auto;       
+    }
+}
+@media (max-width : 575px){
+    .data{
+        float: none;
+        width:100%;
+        text-align: center;
+    }
+}
+/*media for gallery*/
+@media (max-width : 875px){
+    .pictures-part{
+        float: left;
+        width:40%;
+        text-align: center;
+        margin-left:30px; 
+    }
+}
+@media (max-width : 575px){
+    .pictures-part{
+        float: none;
+        width:80%;
+        text-align: center;
+    }
+}
+/* media for Story */
+@media (max-width : 980px){
+    .story-part{
+        float: left;
+        width:40%;
+        text-align: center;
+        margin-left:30px; 
+    }
+}
+@media (max-width : 575px){
+    .story-part{
+        float: none;
+        width:80%;
+        text-align: center;
+    }
+}
+/* media for Authors */
+@media (max-width : 575px){
+    .authors{
+        height: auto;
+    }
+    .author-part{
+        float: none;
+        width:100%;
+        text-align: center;
+    }
+}
+/* media for Footer */
+@media (max-width : 575px){
+    .contact{
+        float: none;
+        width:100%;
+        margin-left:30px; 
+    }
+}
